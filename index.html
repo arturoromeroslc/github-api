@@ -3,14 +3,20 @@
 <head>
 	<title>GitHub API</title>
 </head>
-<body ng-controller="MainCtrl">
+<body ng-controller="GithubController">
 	<form>
 		User Name:<br>
-		<input type="text" ng-model="searchText" name="firstname">
+		<input type="text" ng-model="searchText" name="firstname" placeholder="username" autofocus>
 		<br>
 		<input type="submit" value="search" ng-click="getUserData(searchText)">
 	</form>
 	{{user}}
+	<section>
+		<h1>{{user.name}}</h1>
+		<p><a ng-href="{{user.html_url}}">{{user.html_url}}</a></p>
+		<img ng-src="{{user.avatar_url}}">
+		<h3>{{user.login}}</h3>
+	</section>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
 	<script type="text/javascript" src="/js/app.js"></script>
 	<script type="text/javascript" src="/js/service.js"></script>

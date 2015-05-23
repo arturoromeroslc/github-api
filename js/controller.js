@@ -1,11 +1,11 @@
 angular
 	.module('GithubApp')
-	.controller('MainCtrl', function($scope, $log, MainService) {
+	.controller('GithubController', function($scope, $log, GithubService) {
 		
-		$scope.searchText = '';
+		$scope.searchText = 'arturoromerotcs';
 
 		$scope.getUserData = function(username){ 
-			MainService.getUser(username)
+			GithubService.getUser(username)
 				.then(function(user) {
 					$scope.user = user;
 				});
