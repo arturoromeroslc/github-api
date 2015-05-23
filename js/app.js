@@ -1,2 +1,2 @@
 angular
-	.module('GithubApp', []);
+	.module('GithubApp', ['ui.bootstrap']);
