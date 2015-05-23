@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="GithubApp">
 <head>
 	<title>GitHub API</title>
 </head>
-<body>
-<h1>Hello</h1>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
-<script type="text/javascript" src="/js/service.js"></script>
-<script type="text/javascript" src="/js/controller.js"></script>
+<body ng-controller="MainCtrl">
+	<form>
+		User Name:<br>
+		<input type="text" ng-model="searchText" name="firstname">
+		<br>
+		<input type="submit" value="search" ng-click="getUserData(searchText)">
+	</form>
+	{{user}}
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/service.js"></script>
+	<script type="text/javascript" src="/js/controller.js"></script>
 </body>
 </html>
