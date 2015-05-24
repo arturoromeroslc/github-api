@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="GithubApp">
+<html ng-app="GithubApp" ng-controller="GithubController">
 <head>
 	<title>Github Social Coding</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
-<body class="background_gray" ng-controller="GithubController" >
-	<nav class="navbar container-fluid navbar-default navbar-inner" ng-controller="CollapseCtrl">
+<body class="background_gray">
+	<nav class="navbar container-fluid navbar-default navbar-inner">
   	<div class="navbar-header">
-    	<button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed">
-        <span class="sr-only">MENU</span>
+    	<button type="button" class="navbar-togglee collapsed" ng-click="isCollapsed = !isCollapsed">
+       <!--  <span class="sr-only">MENU</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+        <img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/user.png" width="15" height="15">
     	</button>
     	<a class="navbar-brand" href="#">SC</a>	
   	  <form role="search">
@@ -25,9 +26,9 @@
     <!-- <div collapse="isCollapsed"> -->
 		</div>
   </nav>
-  <section class="container-fluid center">
+  <section  class="container-fluid center">
 	<main class="row">
-	<aside class="col-md-4 background-white">
+	<aside collapse="!isCollapsed" class="col-md-4 background-white">
 		<div class="margin-top-1 profile-header">
 			<a href="#"><img alt="" class="avatar" ng-src="{{user.avatar_url}}" width="110"></a>
 			<h4 class="margin-vertical-0">{{user.name}}</h4>
