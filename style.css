@@ -1,0 +1,112 @@
+.nav, .pagination, .carousel, .panel-title a {
+ cursor: pointer; 
+}
+.background_gray {
+	background-color: #d3d3d3;
+}
+.navbar-inner {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.175);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.175);
+}
+
+
+
+
+
+
+
+/*Main*/
+.max-width-80 {
+	max-width: 80%;
+}
+.max-width-95 {
+	max-width: 95%;
+}
+.center {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.background-white {
+	background-color: #fff;
+}
+.three-fourths {
+	width: 75%;
+}
+
+
+/*Side*/
+.max-width-4_5 {
+	max-width: 4.5rem;
+}
+.margin-left-1 {
+	 margin-left: 1rem;
+}
+.inline-block {
+	 display: inline-block;
+}
+.margin-top-0 {
+	margin-top: 0;
+}
+.one-fourth {
+	width: 25%;
+}
+.column {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.margin-top-1 {
+	margin-top: 1rem;
+}
+/*BAD*/
+.username {
+	font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  color: #666;
+}
+.avatar {
+	  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+.details {
+	padding: 0;
+	font-size: 13px;
+	color: #666;
+	line-height: 1.8;
+}
+.details-item {
+	list-style-type: none;
+}
+.profile-header {
+	position: relative;
+  margin-bottom: 15px;
+  padding: 15px 15px 10px 140px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  line-height: 1.5;
+  overflow: visible;
+  min-height: 140px;
+
+}
+.margin-vertical-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
+/*BOOTSTRAP OVERWRITES*/
+.col-md-3 {
+	width: 30%;
+}
+.margin-left-30 {
+	margin-left: 30px;
+}
+
